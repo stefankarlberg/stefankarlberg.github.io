@@ -7,5 +7,11 @@ body {
     }
 
 h1 {
-    color: #0066ff
+    color: #ffffff;
+    text-align: center;
+  }
+
+  p {
+    color: #ffffff;
+    text-align: center;
   }
