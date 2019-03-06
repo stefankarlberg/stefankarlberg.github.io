@@ -1,17 +1,78 @@
-body {
-    background-image: url("../images/craft_back.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-
+body {margin:0px;}
+    
 h1 {
     color: #ffffff;
     text-align: center;
-  }
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 2px;
+    font-size: 80px;
+    line-height: 80px;
+    }
 
-  p {
+ p {
     color: #ffffff;
     text-align: center;
-  }
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    }
+
+    .bg-craft{
+        position: relative;
+        background-color: #000;
+        height: 100vh;
+    }
+    
+    .bg-craft::before{
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+        opacity: 0.5;
+        background: url("../images/craft_back.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    .content-craft{
+        position: relative;
+        height: 200px;
+        top: 23%;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .content-craft {
+            top: 1%;
+        }
+      }
+
+    .button-craft {
+        background: none;
+        border: 1px solid white;
+        border-radius: 27px;
+        padding: 10px 20px 10px 20px;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    .button-craft:hover {
+        background: white;
+    }
+
+    a.button-craft {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a.button-craft:hover {
+        color: black;
+    }
