@@ -52,6 +52,16 @@ h1 {
     }
 
     @media screen and (max-width: 768px) {
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+            }
+
+        p {
+            font-size: 28px;
+            }
+
+
         .content-craft {
             top: 1%;
         }
